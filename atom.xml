@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>dch-blog</title>
+  
+  <subtitle>欲戴王冠，必承其重</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://dchengsd.com/"/>
+  <updated>2019-11-02T08:10:04.149Z</updated>
+  <id>http://dchengsd.com/</id>
+  
+  <author>
+    <name>Cheng Dong</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://dchengsd.com/2019/11/02/hello-world/"/>
+    <id>http://dchengsd.com/2019/11/02/hello-world/</id>
+    <published>2019-11-02T07:15:56.820Z</published>
+    <updated>2019-11-02T08:10:04.149Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
