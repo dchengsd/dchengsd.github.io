@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dchengsd.com/"/>
-  <updated>2019-11-02T08:10:04.149Z</updated>
+  <updated>2019-11-03T05:47:35.906Z</updated>
   <id>http://dchengsd.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TEST</title>
+    <link href="http://dchengsd.com//posts/undefined/"/>
+    <id>http://dchengsd.com//posts/undefined/</id>
+    <published>2019-11-03T05:43:08.515Z</published>
+    <updated>2019-11-03T05:47:35.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一个测试文档&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="blog" scheme="http://dchengsd.com/categories/blog/"/>
+    
+    
+      <category term="hexo" scheme="http://dchengsd.com/tags/hexo/"/>
+    
+      <category term="test" scheme="http://dchengsd.com/tags/test/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
