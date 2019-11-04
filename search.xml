@@ -14,6 +14,12 @@
 <p>二级引用内容</p>
 </blockquote>
 </blockquote>
+<p><strong>hexo常见操作</strong><br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo clean #清除部署緩存<br>hexo n == hexo new #新建文章<br>hexo g == hexo generate #生成静态页面至public目录<br>hexo s == hexo server #开启预览访问端口（默认端口4000，可在浏览器输入localhost:4000预览）<br>hexo d == hexo deploy #将.deploy目录部署到GitHub<br>hexo g -d #生成加部署<br>hexo g -s #生成加预览</p>
+<p><strong>开启不算子统计</strong><br>NexT中已经为我们集成了不算子统计的代码，我们只需在NexT配置文件中开启即可</p>
+<p>进入Hexo站点目录\themes\next_config.yml，打开配置文件</p>
+<p>搜索busuanzi_count关键字找到不算子统计的相关配置，配置如下：</p>
+<p>只需将enable设置成true即可</p>
+<p>  total_visitors: 站点总访问量<br>  total_visitors_icon: 站点总访问量的小图标<br>  total_views: 总浏览量（所有页面的总浏览量）<br>  total_views_icon: 总浏览量的小图标<br>  post_views: 文章浏览量<br>  post_views_icon: 文浏览量的小图标</p>
 ]]></content>
       <categories>
         <category>blog</category>
