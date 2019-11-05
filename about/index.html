@@ -107,6 +107,10 @@
   </style>
 </noscript>
 
+  
+  
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -337,8 +341,6 @@
 
       </div>
 
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=411214279&auto=1&height=66"></iframe>
-
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
@@ -356,7 +358,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019-11-04</span>
+  <span itemprop="copyrightYear">2019-11-05</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -492,15 +494,15 @@ setInterval("createtime()",250);
     }
   }
 
-  fetch('https://app-router.leancloud.cn/2/route?appId=LPwSITJdkGRN7NOgN2oczXbf-gzGzoHsz')
+  fetch('https://app-router.leancloud.cn/2/route?appId=KFNdDQLNhXWJQc02BXpJpQ75-gzGzoHsz')
     .then(response => response.json())
     .then(({ api_server }) => {
       var Counter = (method, url, data) => {
         return fetch(`https://${api_server}/1.1${url}`, {
           method: method,
           headers: {
-            'X-LC-Id': 'LPwSITJdkGRN7NOgN2oczXbf-gzGzoHsz',
-            'X-LC-Key': 't92YhABFR6GByCKsvPB0lLGQ',
+            'X-LC-Id': 'KFNdDQLNhXWJQc02BXpJpQ75-gzGzoHsz',
+            'X-LC-Key': 'fi4QMvLI6p1vMeqj0gNXUkr8',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(data)
@@ -600,7 +602,22 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     <script type="text/javascript" src="/js/fireworks.js"></script>
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":-20},"mobile":{"show":false},"react":{"opacityDefault":0.5,"opacityOnHover":0.5},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+  <!-- badApplePlayer -->
+  <script src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+  
+    <!-- Your XlchPlayerKey -->
+    <script>XlchKey="wngpwj2X66";</script>
+    <!-- font-awesome 4.2.0 -->
+    <link href="https://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- JQuery-mousewheel 3.1.9 -->
+    <script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+    <!-- Scrollbar -->
+    <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
+    <!-- BadApplePlayer -->
+    <script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":200},"mobile":{"show":false},"react":{"opacityDefault":0.5,"opacityOnHover":0.5},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <!-- 页面点击小红心 -->
