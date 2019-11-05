@@ -54,9 +54,9 @@
       <category term="blog" scheme="http://dchengsd.com/categories/blog/"/>
     
     
-      <category term="hexo" scheme="http://dchengsd.com/tags/hexo/"/>
-    
       <category term="test" scheme="http://dchengsd.com/tags/test/"/>
+    
+      <category term="hexo" scheme="http://dchengsd.com/tags/hexo/"/>
     
   </entry>
   
