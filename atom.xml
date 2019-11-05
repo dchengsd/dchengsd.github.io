@@ -5,9 +5,9 @@
   <subtitle>欲戴王冠，必承其重</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://dchengsd.com/"/>
+  <link href="https://dchengsd.com/"/>
   <updated>2019-11-05T09:15:34.425Z</updated>
-  <id>http://dchengsd.com/</id>
+  <id>https://dchengsd.com/</id>
   
   <author>
     <name>Cheng Dong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>word</title>
-    <link href="http://dchengsd.com/posts/c3f17511/"/>
-    <id>http://dchengsd.com/posts/c3f17511/</id>
+    <link href="https://dchengsd.com/posts/c3f17511/"/>
+    <id>https://dchengsd.com/posts/c3f17511/</id>
     <published>2019-11-05T09:04:13.426Z</published>
     <updated>2019-11-05T09:15:34.425Z</updated>
     
@@ -30,17 +30,17 @@
     </summary>
     
     
-      <category term="blog" scheme="http://dchengsd.com/categories/blog/"/>
+      <category term="blog" scheme="https://dchengsd.com/categories/blog/"/>
     
     
-      <category term="test" scheme="http://dchengsd.com/tags/test/"/>
+      <category term="test" scheme="https://dchengsd.com/tags/test/"/>
     
   </entry>
   
   <entry>
     <title>TEST</title>
-    <link href="http://dchengsd.com/posts/eeea93b8/"/>
-    <id>http://dchengsd.com/posts/eeea93b8/</id>
+    <link href="https://dchengsd.com/posts/eeea93b8/"/>
+    <id>https://dchengsd.com/posts/eeea93b8/</id>
     <published>2019-11-03T05:43:08.515Z</published>
     <updated>2019-11-04T05:50:17.710Z</updated>
     
@@ -51,19 +51,19 @@
     </summary>
     
     
-      <category term="blog" scheme="http://dchengsd.com/categories/blog/"/>
+      <category term="blog" scheme="https://dchengsd.com/categories/blog/"/>
     
     
-      <category term="test" scheme="http://dchengsd.com/tags/test/"/>
+      <category term="test" scheme="https://dchengsd.com/tags/test/"/>
     
-      <category term="hexo" scheme="http://dchengsd.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://dchengsd.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://dchengsd.com/posts/4a17b156/"/>
-    <id>http://dchengsd.com/posts/4a17b156/</id>
+    <link href="https://dchengsd.com/posts/4a17b156/"/>
+    <id>https://dchengsd.com/posts/4a17b156/</id>
     <published>2019-11-02T07:15:56.820Z</published>
     <updated>2019-11-03T07:28:40.220Z</updated>
     
