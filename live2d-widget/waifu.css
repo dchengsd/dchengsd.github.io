@@ -16,7 +16,7 @@
 	bottom: -1000px;
 	right: 0;
 	z-index: 1;
-	line-height: 0;
+	line-height: 30;
 	transition: transform .3s ease-in-out;
 	transform: translateY(3px);
 }
