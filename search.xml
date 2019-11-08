@@ -31,6 +31,8 @@
 </blockquote>
 </blockquote>
 <p><strong>hexo常见操作</strong><br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo clean #清除部署緩存<br>hexo n == hexo new #新建文章<br>hexo g == hexo generate #生成静态页面至public目录<br>hexo s == hexo server #开启预览访问端口（默认端口4000，可在浏览器输入localhost:4000预览）<br>hexo d == hexo deploy #将.deploy目录部署到GitHub<br>hexo g -d #生成加部署<br>hexo g -s #生成加预览</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello world!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>开启不算子统计</strong><br>NexT中已经为我们集成了不算子统计的代码，我们只需在NexT配置文件中开启即可</p>
 <p>进入Hexo站点目录\themes\next_config.yml，打开配置文件</p>
 <p>搜索busuanzi_count关键字找到不算子统计的相关配置，配置如下：</p>
