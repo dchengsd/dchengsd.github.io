@@ -18,6 +18,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
@@ -33,7 +34,7 @@
     copycode: {"enable":true,"show_result":true,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":true,"color":"#222","save":"auto"},
-    fancybox: false,
+    fancybox: true,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -427,6 +428,19 @@
 
                 
 
+                    <div class="card">
+                        <img class="ava" src="http://file.mspring.org/avatar.jpg"/>
+                        <div class="card-header">
+                        <div><a href="https://www.mspring.org" target="_blank"> 雾非雾的情思</a> <a href="https://www.mspring.org" target="_blank"
+
+
+                        ><span class="focus-links">关注</span></a></div>
+                        <div class="info">爱折腾的Java老码农！</div>
+                        </div>
+                    </div>
+
+                
+
             </div>
             <hr><div style="text-align:center;"><span class="with-love" id="animate1">
     <i class="fa fa-heart"></i>
@@ -558,8 +572,8 @@
   
   &copy; 
   <span itemprop="copyrightYear">2019-11-09</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heartbeat"></i>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heartbeat" aria-hidden="true"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Cheng Dong</span>
     <span class="post-meta-divider">|</span>
@@ -731,6 +745,8 @@ setInterval("createtime()",250);
   
   <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
