@@ -1277,7 +1277,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff03;
+  background: #7c2bfc;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3106,4 +3106,9 @@ div.post-block.tag .collection-title h2 {
     font-size: 26px;
     line-height: 20px;
   }
+}
+.jingping {
+  background: #00a8c3;
+  padding: 2px 4px 2px 4px;
+  color: #fff;
 }
