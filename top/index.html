@@ -67,7 +67,7 @@
 <meta property="og:site_name" content="Dch&#39;s Blog">
 <meta property="og:description" content="博客文章阅读量排行榜">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-09T08:39:59.924Z">
+<meta property="og:updated_time" content="2019-11-12T07:25:20.007Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://www.dchengsd.com/top/">
@@ -275,7 +275,7 @@
     query.descending('time');
     query.limit(10);
     query.find().then(function (todo) {
-        for (var i=0;i<10;i++){
+        for (var i=0;i<1000;i++){
             var result=todo[i].attributes;
             time=result.time;
             title=result.title;
@@ -404,7 +404,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019-11-11</span>
+  <span itemprop="copyrightYear">2019-11-12</span>
   <span class="with-love" id="heart">
     <i class="fa fa-heartbeat" aria-hidden="true"></i>
   </span>
