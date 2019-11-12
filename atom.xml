@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.dchengsd.com/"/>
-  <updated>2019-11-11T13:45:20.139Z</updated>
+  <updated>2019-11-12T15:56:54.850Z</updated>
   <id>https://www.dchengsd.com/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://www.dchengsd.com/posts/b8ac865a/"/>
     <id>https://www.dchengsd.com/posts/b8ac865a/</id>
     <published>2019-11-11T13:41:22.980Z</published>
-    <updated>2019-11-11T13:45:20.139Z</updated>
+    <updated>2019-11-12T15:56:54.850Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;经过几天的不断优化折腾，终于将博客搞得比较满意了，特此记录一下！&lt;/p&gt;
+      &lt;p&gt;经过几天的不断优化折腾，终于将博客搞得比较满意了，特此记录一下！本次配置基于Next7.0版本！&lt;/p&gt;
     
     </summary>
     
@@ -77,9 +77,9 @@
       <category term="blog" scheme="https://www.dchengsd.com/categories/blog/"/>
     
     
-      <category term="hexo" scheme="https://www.dchengsd.com/tags/hexo/"/>
-    
       <category term="test" scheme="https://www.dchengsd.com/tags/test/"/>
+    
+      <category term="hexo" scheme="https://www.dchengsd.com/tags/hexo/"/>
     
   </entry>
   

@@ -3,9 +3,43 @@
   <entry>
     <title>Hexo-Next主题优化</title>
     <url>/posts/b8ac865a/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过几天的不断优化折腾，终于将博客搞得比较满意了，特此记录一下！</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过几天的不断优化折腾，终于将博客搞得比较满意了，特此记录一下！本次配置基于Next7.0版本！</p>
 <a id="more"></a>
 
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="开启github-pages"><a href="#开启github-pages" class="headerlink" title="开启github pages"></a>开启github pages</h2><p>首先注册一个github账号，登录后新建一个仓库</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C1.JPG" alt="创建新仓库"></p>
+<p>然后填入仓库的名称和描述，注意：仓库的名称需为 <strong>用户名.github.io</strong>,然后点击创建</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C2.png" alt="填写仓库名称"></p>
+<p>然后点击Settings设置，找到github pages，点击choose theme选择一个主题（可随便选，后面还可以改），然后博客首页就做好了。可以先在浏览器中输入用户名.github.io访问</p>
+<h2 id="Hexo环境搭建"><a href="#Hexo环境搭建" class="headerlink" title="Hexo环境搭建"></a>Hexo环境搭建</h2><p>首先是安装<a href="https://git-scm.com/download" target="_blank" rel="noopener">git</a></p>
+<p>再安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a></p>
+<p>两个都默认安装即可</p>
+<p>安装完成后创建一个存放Hexo组件的目录，我以blog目录为例</p>
+<p>进入blog文件夹，右键选择git bash here</p>
+<p>然后在命令行中输入npm install hexo -g ，开始安装Hexo</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C3.JPG" alt="初始化hexo"></p>
+<p>输入 hexo -v，检查hexo是否安装成功</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C4.JPG" alt="hexo -v"></p>
+<p>输入hexo init，初始化文件夹，有点慢，可能要耐心等待。 完成后显示Start blogging with Hexo这串提示就说明安装成功啦 。</p>
+<p>输入npm install，安装所需组件</p>
+<p>将Hexo和github pages联系起来设置 user name和email</p>
+<p>​    输入git config –global user.name “你的github用户名”</p>
+<p>​    输入git config –global user.email “你注册github时的邮箱”</p>
+<p>进入blog文件夹，找到并打开_config.yml配置文件，配置deploy属性</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C7.JPG" alt="配置deploy"></p>
+<h2 id="使用Hexo修改博客主题"><a href="#使用Hexo修改博客主题" class="headerlink" title="使用Hexo修改博客主题"></a>使用Hexo修改博客主题</h2><p>我们可以在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo</a>官网上选择一个我们喜欢的主题，点击主题名，进入发布人的github，我以next主题为例</p>
+<p>复制主题链接</p>
+<p>然后回到blog目录下，找到并进入theme文件夹</p>
+<p>右键选择git bash here</p>
+<p>输入git clone +你选择的主题链接</p>
+<p>下载所选主题</p>
+<p>将名字改为next，在blog文件夹下邮件选择git bash here，执行命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-less --save</span><br></pre></td></tr></table></figure>
+
+<p>运行hexo s，浏览器输入localhost:4000查看页面预览</p>
+<h1 id="主题基础配置"><a href="#主题基础配置" class="headerlink" title="主题基础配置"></a>主题基础配置</h1><h2 id="配置基本信息"><a href="#配置基本信息" class="headerlink" title="配置基本信息"></a>配置基本信息</h2><p>打开~/blog中的_config.yml文件，配置如下基本信息</p>
+<p><img src="E:%5Cdch%5C%E5%8D%9A%E5%AE%A2%E6%9D%90%E6%96%99%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C8.JPG" alt="基本信息"></p>
+<p>各个配置说明如下：<br>    title: your title<br>    subtitle: your subtitle<br>    description: your description<br>    keywords: your keywords<br>    author: your name<br>    email: your email<br>    url: your site url</p>
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -58,8 +92,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>test</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
