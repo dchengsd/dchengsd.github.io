@@ -7,9 +7,9 @@
 <a id="more"></a>
 
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="开启github-pages"><a href="#开启github-pages" class="headerlink" title="开启github pages"></a>开启github pages</h2><p>首先注册一个github账号，登录后新建一个仓库</p>
-<p><img src="E:%5Cdch%5Cblog%5Csource%5Cpicture%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C1.JPG" alt="创建新仓库"></p>
+<p><img src="https:dchengsd.com/images/picture/Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1.JPG" alt="创建新仓库"></p>
 <p>然后填入仓库的名称和描述，注意：仓库的名称需为 <strong>用户名.github.io</strong>,然后点击创建</p>
-<p><img src="E:%5Cdch%5Cblog%5Csource%5Cpicture%5CHexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%5C2.png" alt="创建仓库"></p>
+<p><img src="/images/picture/Hexo-Next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/2.png" alt="创建仓库"></p>
 <p>然后点击Settings设置，找到github pages，点击choose theme选择一个主题（可随便选，后面还可以改），然后博客首页就做好了。可以先在浏览器中输入用户名.github.io访问</p>
 <h2 id="Hexo环境搭建"><a href="#Hexo环境搭建" class="headerlink" title="Hexo环境搭建"></a>Hexo环境搭建</h2><p>首先是安装<a href="https://git-scm.com/download" target="_blank" rel="noopener">git</a></p>
 <p>再安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a></p>
