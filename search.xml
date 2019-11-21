@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>学习笔记之数据库</title>
+    <url>/posts/ca1adc13/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>数据库知识点总结，面试重点详解。</p>
+<a id="more"></a>
+
+<h1 id="数据库的三范式"><a href="#数据库的三范式" class="headerlink" title="数据库的三范式"></a>数据库的三范式</h1><p><strong>第一范式：</strong>强调的是列的原子性，即数据库表的每一列都是不可分割的原子数据项。</p>
+<p><strong>第二范式：</strong>要求实体的属性完全依赖于主关键字。所谓完全依赖是指不能存在仅依赖主关键字一部分的属性。</p>
+<p><strong>第三范式：</strong>任何非主属性不依赖于其他非主属性。</p>
+<h1 id="事务特性（ACID）"><a href="#事务特性（ACID）" class="headerlink" title="事务特性（ACID）"></a>事务特性（ACID）</h1><p>1、原子性（Atomicity）：指当前的事务要不全执行，要不全都不执行</p>
+<p>2、一致性（Consistency）：指数据状态不会发生改变，事务开始前和事务结束后，数据库的完整性不会改变。</p>
+<p>3、隔离性（Isolation）：指事务之间是相互隔离的，可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。</p>
+<p>4、持久性（Druability）：事务处理结束后，对数据的修改时永久的，能够保存到数据库中。</p>
+<h2 id="原子性"><a href="#原子性" class="headerlink" title="原子性"></a>原子性</h2><p><strong>实现原理：</strong>通过在存储引擎中的undo文件，通过撤销操作，实现对于数据库的内容进行回滚。</p>
+<h2 id="隔离性"><a href="#隔离性" class="headerlink" title="隔离性"></a>隔离性</h2><p>严格来说事务之间应该是完全隔离的，但是在InooDB中存在着事务隔离机制</p>
+<h3 id="事务隔离级别"><a href="#事务隔离级别" class="headerlink" title="事务隔离级别"></a>事务隔离级别</h3><p><strong>Read uncommited：</strong>未提交读，最低隔离级别，事务提交之前，就可以被其他事务读取。存在脏读、不可重复读、幻读等问题。</p>
+<p><strong>Read commited：</strong>提交读，事务提交后才能被其他事务读取到。会导致不可重复读、幻读。</p>
+<p><strong>Repeatable-Read：</strong>可重复读，MySQL默认隔离级别，保证多次读取同一个数据时，其值都是可事务开始时候的内容一致，机制读取到其他事务未提交的数据。会导致幻读。</p>
+<p><strong>Serializable：</strong>序列化，代价最高，最可靠的隔离级别，该隔离机制可以防止脏读、不可重复读和幻读。</p>
+<h3 id="什么是脏读、不可重复读和幻读？"><a href="#什么是脏读、不可重复读和幻读？" class="headerlink" title="什么是脏读、不可重复读和幻读？"></a>什么是脏读、不可重复读和幻读？</h3><p><strong>脏读：</strong>表示一个事务能够读取到另一个事务还未提交的数据。比如，某个事务尝试插入记录A，此时该事务还未提交，然后另一个事务尝试读取并读取到记录A。</p>
+<p><strong>不可重复读：</strong>是指在一个事务内，多次读取同一数据</p>
+<p><strong>幻读：</strong>指同一个事务内多次查询返回的结果集不一样。比如，同一个事务A第一次查询时候有n条记录，但是第二次同等条件下查询却有n+1条记录。</p>
+<p>发生幻读的原因：另外一个事务新增或删除或者修改了第一个事务结果集中的数据，同一个记录的数据内容被修改了，所有数据行的记录就变多或者变少了。</p>
+<h2 id="持久性"><a href="#持久性" class="headerlink" title="持久性"></a>持久性</h2><p><strong>实现原理：</strong>通过存储引擎中的redo文件，数据库当中的内容都需要存储到硬盘当中。</p>
+<p>但是，把每个数据都存储到硬盘中的缺点：</p>
+<p>​    1）每次读取一个页的内容，但是对于内容的修改却只有一小部分，</p>
+<p>​    2）针对不同的内容，在硬盘中的IO是随机IO，时间复杂度比较高。</p>
+<p>通过一个redo文件，把命令写入到缓冲区当中，对于同步可以采取三种方式，这样做的优点在于：</p>
+<p>​    每次都是对于redo文件的扩展，并且是顺序IO。</p>
+<h2 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h2><p>上⾯三种属性都是为了实现， mysql的⼀致性。  </p>
+<p>​        ⼀般来说是读不加锁通过MVVC来实现选择合适的数据，通过添加隐藏列、创建版本号、删除版本号，以及指向undo log的指针来实现回滚操作。通过next-key lock、通过record key+gap key lock来解决幻读问题。虽然名义上叫做锁，但实际并不是⼀个锁只是⼀个标记通过查找undo log对内容进⾏回滚选择到满⾜条件的数据。对于写数据⼀般进⾏加锁操作。  </p>
+<p>悲观锁有 排他锁 写锁（X锁） 共享锁 读锁（S锁） 还存在表锁和⾏锁，表锁是对⼀张表加锁，⾏锁是对于表中的⼀⾏进⾏加锁。<br>        还存在意向锁，意向锁并不是真正的锁，在使⽤⾏锁的时候如果每次遍历每⼀⾏去得到所有的锁，这样时间复杂度⽐较⾼。通过加上意向锁，能过减少时间复杂度。<br>        通过写的时候加锁，直到事务结束释放避免了写⽆效。<br>        写的时候加锁，读的时候加锁然后直接释放，可以避免写⽆效，可以避免脏读，但不可以避免不可重复读<br>        通过写的时候加锁，读的时候加速直到事务结束释放，可以避免不可重复读，但是不能够避免的事幻读<br>可以通过乐观锁的⽅式实现：<br>        MVVC多版本并发控制，实现repeatable read。是通过在命令后⾯加上⼀个创建版本和删除版本<br>        在SELECT的时候要选择，创建版本早于当前事务版本的内容，并删除版本晚于当前版本的内容。对于每⼀⾏的操作存储到undo⽂件中通过⼀个链表来表示各种命令。<br>insert update delete 的事务版本更新和删除版本也进⾏更新<br>update 会创建⼀个新的版本号，并且将原来的版本号看做原来的删除版本<br>        对于 rr来说，是每次事务创建⼀个事务ID，对于rc是每个语句创建⼀个readview类。通过多版本并发控制来实现可重复读，对于可能产⽣的幻读通过next-key lock来对其进⾏控制。 next-key lock是通过record key与gap lock来实现对于间隙加锁，这样在⼀个事务之内不会插⼊到间隙当中，这样便不会产⽣幻读。  </p>
+<p> <a href="https://blog.csdn.net/bosiyan/article/details/77480236" target="_blank" rel="noopener">https://blog.csdn.net/bosiyan/article/details/77480236</a>  </p>
+<p> <a href="https://www.cnblogs.com/crazylqy/p/7821481.html" target="_blank" rel="noopener">https://www.cnblogs.com/crazylqy/p/7821481.html</a>  </p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科学上网-V2ray脚本一键配置</title>
+    <url>/posts/fbe26701/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近，之前用的不错的shadowsocks突然不能用了，现在普遍使用V2ray来科学上网，所以舍弃了shadowsocks，重新配置了下V2ray。</p>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>科学上网</category>
+      </categories>
+      <tags>
+        <tag>科学上网</tag>
+        <tag>V2ray</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-Next主题优化</title>
     <url>/posts/b8ac865a/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>经过几天的不断优化折腾，终于将博客搞得比较满意了，特此记录一下！本次配置基于Next7.0版本！</p>
@@ -184,53 +241,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>word</title>
-    <url>/posts/c3f17511/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这个文档是为了测试相关文档</p>
-<a id="more"></a>
-
-<h1 id="测试文档"><a href="#测试文档" class="headerlink" title="测试文档"></a>测试文档</h1><p>测试相关性</p>
-<h2 id="测试文档二"><a href="#测试文档二" class="headerlink" title="测试文档二"></a>测试文档二</h2><p>到这结束吧</p>
-]]></content>
-      <categories>
-        <category>word</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TEST</title>
-    <url>/posts/eeea93b8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这是一个测试文档</p>
-<a id="more"></a>
-
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>测试一级标题</p>
-<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>测试二级标题</p>
-<blockquote>
-<p>引用内容</p>
-<blockquote>
-<p>二级引用内容</p>
-</blockquote>
-</blockquote>
-<p><strong>hexo常见操作</strong><br>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo clean #清除部署緩存<br>hexo n == hexo new #新建文章<br>hexo g == hexo generate #生成静态页面至public目录<br>hexo s == hexo server #开启预览访问端口（默认端口4000，可在浏览器输入localhost:4000预览）<br>hexo d == hexo deploy #将.deploy目录部署到GitHub<br>hexo g -d #生成加部署<br>hexo g -s #生成加预览</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"hello world!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>开启不算子统计</strong><br>NexT中已经为我们集成了不算子统计的代码，我们只需在NexT配置文件中开启即可</p>
-<p>进入Hexo站点目录\themes\next_config.yml，打开配置文件</p>
-<p>搜索busuanzi_count关键字找到不算子统计的相关配置，配置如下：</p>
-<p>只需将enable设置成true即可</p>
-<p>  total_visitors: 站点总访问量<br>  total_visitors_icon: 站点总访问量的小图标<br>  total_views: 总浏览量（所有页面的总浏览量）<br>  total_views_icon: 总浏览量的小图标<br>  post_views: 文章浏览量<br>  post_views_icon: 文浏览量的小图标</p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>test</tag>
       </tags>
   </entry>
   <entry>

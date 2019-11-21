@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.dchengsd.com/"/>
-  <updated>2019-11-13T16:45:24.283Z</updated>
+  <updated>2019-11-21T08:36:58.283Z</updated>
   <id>https://www.dchengsd.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习笔记之数据库</title>
+    <link href="https://www.dchengsd.com/posts/ca1adc13/"/>
+    <id>https://www.dchengsd.com/posts/ca1adc13/</id>
+    <published>2019-11-21T07:43:42.654Z</published>
+    <updated>2019-11-21T08:36:58.283Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;数据库知识点总结，面试重点详解。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="https://www.dchengsd.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="数据库" scheme="https://www.dchengsd.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科学上网-V2ray脚本一键配置</title>
+    <link href="https://www.dchengsd.com/posts/fbe26701/"/>
+    <id>https://www.dchengsd.com/posts/fbe26701/</id>
+    <published>2019-11-18T12:25:37.918Z</published>
+    <updated>2019-11-18T12:31:04.851Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近，之前用的不错的shadowsocks突然不能用了，现在普遍使用V2ray来科学上网，所以舍弃了shadowsocks，重新配置了下V2ray。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="科学上网" scheme="https://www.dchengsd.com/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="科学上网" scheme="https://www.dchengsd.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="V2ray" scheme="https://www.dchengsd.com/tags/V2ray/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-Next主题优化</title>
@@ -36,50 +80,6 @@
       <category term="Hexo" scheme="https://www.dchengsd.com/tags/Hexo/"/>
     
       <category term="Next" scheme="https://www.dchengsd.com/tags/Next/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>word</title>
-    <link href="https://www.dchengsd.com/posts/c3f17511/"/>
-    <id>https://www.dchengsd.com/posts/c3f17511/</id>
-    <published>2019-11-05T09:04:13.426Z</published>
-    <updated>2019-11-12T09:07:36.038Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这个文档是为了测试相关文档&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="word" scheme="https://www.dchengsd.com/categories/word/"/>
-    
-    
-      <category term="test" scheme="https://www.dchengsd.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TEST</title>
-    <link href="https://www.dchengsd.com/posts/eeea93b8/"/>
-    <id>https://www.dchengsd.com/posts/eeea93b8/</id>
-    <published>2019-11-03T05:43:08.515Z</published>
-    <updated>2019-11-11T13:18:57.122Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是一个测试文档&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="blog" scheme="https://www.dchengsd.com/categories/blog/"/>
-    
-    
-      <category term="hexo" scheme="https://www.dchengsd.com/tags/hexo/"/>
-    
-      <category term="test" scheme="https://www.dchengsd.com/tags/test/"/>
     
   </entry>
   
