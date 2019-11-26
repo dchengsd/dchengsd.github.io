@@ -165,7 +165,8 @@
         <category>数据结构与排序算法</category>
       </categories>
       <tags>
-        <tag>数据结构，排序算法</tag>
+        <tag>数据结构</tag>
+        <tag>排序算法</tag>
       </tags>
   </entry>
   <entry>
@@ -195,7 +196,8 @@
         <category>Java基础</category>
       </categories>
       <tags>
-        <tag>HashMap，源码分析</tag>
+        <tag>HashMap</tag>
+        <tag>源码分析</tag>
       </tags>
   </entry>
   <entry>
@@ -262,7 +264,8 @@
         <category>Java并发</category>
       </categories>
       <tags>
-        <tag>多线程，生产者消费者</tag>
+        <tag>多线程</tag>
+        <tag>生产者消费者</tag>
       </tags>
   </entry>
   <entry>
