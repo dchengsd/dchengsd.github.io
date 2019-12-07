@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.dchengsd.com/"/>
-  <updated>2019-11-26T07:39:29.207Z</updated>
+  <updated>2019-12-06T09:32:49.952Z</updated>
   <id>https://www.dchengsd.com/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络之输入URL</title>
+    <link href="https://www.dchengsd.com/posts/df442c95/"/>
+    <id>https://www.dchengsd.com/posts/df442c95/</id>
+    <published>2019-12-06T09:13:36.332Z</published>
+    <updated>2019-12-06T09:32:49.952Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个问题已经是老生常谈了，更是经常被作为面试的压轴题出现，本文的步骤是建立在，请求的是一个简单的 HTTP 请求，没有 HTTPS、HTTP2、最简单的 DNS、没有代理、并且服务器没有任何问题的基础上，尽管这是不切实际的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="https://www.dchengsd.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="URL" scheme="https://www.dchengsd.com/tags/URL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mybatis之plugin插件设计原理</title>
+    <link href="https://www.dchengsd.com/posts/679141c/"/>
+    <id>https://www.dchengsd.com/posts/679141c/</id>
+    <published>2019-12-06T08:57:17.896Z</published>
+    <updated>2019-12-06T09:10:06.527Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大多数框架，都支持插件，用户可通过编写插件来自行扩展功能，Mybatis也不例外。&lt;/p&gt;
+&lt;p&gt;我们从插件配置、插件编写、插件运行原理、插件注册与执行拦截的时机、初始化插件、分页插件的原理等六个方面展开阐述。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Mybatis" scheme="https://www.dchengsd.com/categories/Mybatis/"/>
+    
+    
+      <category term="plugin插件" scheme="https://www.dchengsd.com/tags/plugin%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络之HTTPS详解</title>
+    <link href="https://www.dchengsd.com/posts/ec8785b4/"/>
+    <id>https://www.dchengsd.com/posts/ec8785b4/</id>
+    <published>2019-12-06T08:20:04.006Z</published>
+    <updated>2019-12-06T09:11:51.817Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为什么用了 HTTPS 就是安全的？HTTPS 的底层原理如何实现？用了 HTTPS 就一定安全吗？本文将层层深入，从原理上把HTTPS的安全性讲透。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="https://www.dchengsd.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="HTTPS" scheme="https://www.dchengsd.com/tags/HTTPS/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构与算法之排序算法</title>
